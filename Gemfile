@@ -32,9 +32,21 @@ gem 'rack-cors'
 gem 'rack-attack'
 gem 'active_model_serializers'
 
+#Testing Gem
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  #
+  gem 'database_cleaner'
+
+
+    # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.13.0'
+  gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.5'
+
 end
 
 group :development do
